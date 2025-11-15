@@ -47,7 +47,17 @@ assign $rule $workspace
 ```
 * $rule: [class="$class_name"]
     > you may look up for class_name using command "xprop"
-* font pango:$font_name $font_size
+```
+font pango:$font_name $font_size
+```
+## func blocks
+* bar{}
+    > config to i3bar
+    * position $(top/bottom)
+    * colors {}
+        > yes it's a function block inside another one
+        * background $color
+        
 # actions
     exec $param $command
 * $param(optional) : --nostartup-id
