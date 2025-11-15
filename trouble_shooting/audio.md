@@ -25,4 +25,14 @@
         * using "alsa-utils"
             * if audio device exists : maximise speaker volume in "alsa-utils"
             * if not : hardware error
+## disable pc speaker
+1. disable in this session
+```bash
+rmmod pcspkr
+```
+2. disable it at startup
+* write these to /etc/modprobe.d/nobeep.conf
+```
+blacklist pcspkr
+```
  
