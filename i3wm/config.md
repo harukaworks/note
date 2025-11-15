@@ -53,11 +53,30 @@ font pango:$font_name $font_size
 ## func blocks
 * bar{}
     > config to i3bar
+    * generally speaking, i3bar is NOT intergated to i3wm, however they share the same config profile
     * position $(top/bottom)
+    * status_command $program
+        > use $program as a status bar
+        * --transparency to enable transparency
+    * workspace_command $program
+        > use $program as a workplace bar
+    * mode $(dock/hide/invisiable)
+        > $dock for always display(default), $hide for display while $mod key is pressed
+    * tray_output $(monitor/none)
+        > set to none when you don't want a tray bar
+    * font pango:$font_name $font_size
+    * padding $top $right $bottom $left
     * colors {}
-        > yes it's a function block inside another one
-        * background $color
-        
+        > yes it's a function block inside bar settings
+        * background/statusline/separator $color
+        * colorclass $border $background $text
+            * colorclass:
+                * focusd_(background/statusline/separator)
+                    * default: background/statusline/separator
+                * (focusd/active/inactive/urgent)_workspace
+                * binding_mode
+                    > default: urgent_workspace
+
 # actions
     exec $param $command
 * $param(optional) : --nostartup-id

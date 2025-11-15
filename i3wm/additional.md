@@ -50,6 +50,7 @@
     * pros:
         1. light
         2. modular
+        3. easy to write scripts
     * cons:
         1. default setting zero ready to use
         2. not fancy
@@ -60,6 +61,7 @@
         3. modular
     * cons:
         1. not light
+        2. not compatible with i3bar
 ## audio manager
 1. pulseaudio
     * pros:
@@ -93,7 +95,7 @@
         3. vim commands
     * cons:
         1. heavy dependency
-2. dophin
+2. dolphin
     * pros:
         1. easy to mount drives
     * cons:
