@@ -1,6 +1,9 @@
 # gtk
 ## config software
 * lxappearance
+> gtk2-3
+* nwg-look
+> gtk3-4
 
 # qt
 ## config software

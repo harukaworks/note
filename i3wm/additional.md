@@ -98,10 +98,10 @@
 2. dolphin
     * pros:
         1. easy to mount drives
-    * cons:
+    * cons:s
         1. even heavier dependency - kde
 ## hardware control
-1. backlight control : brightnessctl
+1. backlight control : brightnessctl/xbacklight
 2. bluetooth control ui : bluetui
 3. network connection ui : nmtui
 4. power control : tlpui
